@@ -16,5 +16,13 @@
   "dependencies": {
     "node-static": "^0.7.11",
     "socket.io": "^4.6.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hanjini7/reversi-jinny.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hanjini7/reversi-jinny/issues"
+  },
+  "homepage": "https://github.com/hanjini7/reversi-jinny#readme"
 }
