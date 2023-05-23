@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -15,7 +16,7 @@
   </style>
   <script>
     function goToLobby(){
-      let username = $('#nameInput').val();
+      let username = encodeURI($('#nameInput').val());
       window.location.href = "lobby.html?username="+username;
     }
   </script>
