@@ -57,7 +57,7 @@ function makeInvitedButton(socket_id) {
 }
 
 function makePlayButton(socket_id) {
-    let newHTML = "<button type='button' class='btn btn-seccess'>Play</button>";
+    let newHTML = "<button type='button' class='btn btn-success'>Play</button>";
     let newNode = $(newHTML);
     newNode.click(() => {
         let payload = {
