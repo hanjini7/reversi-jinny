@@ -23,6 +23,7 @@ body {
   }
 
   table#game_board td {
+    background-color: rgb(83, 168, 83);
     border: 1px solid black;
     margin: 0pxl
     padding: 0px;
