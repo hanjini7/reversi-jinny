@@ -424,7 +424,7 @@ socket.on('game_update', (payload) => {
     $("#whitesum").html(whitesum);
     $("#blacksum").html(blacksum);
     old_board = board;
-})
+});
 
 
 socket.on('play_token_response', (payload) => {
