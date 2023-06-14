@@ -436,7 +436,7 @@ socket.on('play_token_response', (payload) => {
         alert(payload.message);
         return;
     }
-})
+});
 
 
 

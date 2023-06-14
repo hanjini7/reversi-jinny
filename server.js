@@ -583,7 +583,7 @@ io.on('connection', (socket) => {
 
         let d = new Date();
         game.last_move_time = d.getTime();
-            
+
         send_game_update(socket, game_id, 'played a token');
     });
 });
@@ -598,11 +598,11 @@ let games = [];
 function create_new_game() {
     let new_game = {};
     new_game.player_white = {};
-    new_game.player_white.socket = " ";
-    new_game.player_white.username = " ";
+    new_game.player_white.socket = "";
+    new_game.player_white.username = "";
     new_game.player_black = {};
-    new_game.player_black.socket = " ";
-    new_game.player_black.username = " ";
+    new_game.player_black.socket = "";
+    new_game.player_black.username = "";
 
     var d = new Date();
     new_game.last_move_time = d.getTime();
@@ -732,11 +732,11 @@ function flip_line(who, dr, dc, r, c, board) {
         return false;
     }
     if (board[r + dr][c + dc] === who) {
-        return ture;
+        return true;
     }
     else {
         if (flip_line(who, dr, dc, r + dr, c + dc, board)) {
-            boad[r + dr][c + dc] = who;
+            board[r + dr][c + dc] = who;
             return true;
         }
         else {
