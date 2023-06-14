@@ -426,7 +426,6 @@ socket.on('game_update', (payload) => {
     old_board = board;
 })
 
-
 socket.on('play_token_response', (payload) => {
     if ((typeof payload == 'undefined') || (payload === null)) {
         console.log('Server did not send a payload');
