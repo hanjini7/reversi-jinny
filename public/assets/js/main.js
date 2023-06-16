@@ -439,7 +439,6 @@ socket.on('play_token_response', (payload) => {
 });
 
 
-
 socket.on('game_over', (payload) => {
     if ((typeof payload == 'undefined') || (payload === null)) {
         console.log('Server did not send a payload');
